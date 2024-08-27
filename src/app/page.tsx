@@ -3,6 +3,7 @@ import Header from "@/components/common/header/Header";
 import HeadNotice from "@/components/HeadNotice";
 import TopServices from "@/components/topServices/TopServices";
 import ProductHeader from "@/components/product/ProductHeader";
+import DocumentAssistance from "@/components/document_assistance/DocumentAssistance";
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
       </div>
       <div className="mt-[139.29px]">
         <ProductHeader />
+      </div>
+      <div className="mt-[106.71px]">
+        <DocumentAssistance/>
       </div>
       <div className="h-[40px] w-full bg-background-color"></div>
     </main>

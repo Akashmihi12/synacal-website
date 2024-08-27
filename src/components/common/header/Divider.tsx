@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 type DivideLineProps = {
   color?: string;
@@ -8,15 +8,15 @@ type DivideLineProps = {
 };
 
 const DivideLine: React.FC<DivideLineProps> = ({
-  color = '#000', 
-  thickness = '1px', 
-  width = '100%', 
-  margin = '16px 0', 
+  color = "#000",
+  thickness = "1px",
+  width = "100%",
+  margin = "16px 0",
 }) => {
   return (
     <hr
       style={{
-        border: 'none',
+        border: "none",
         borderTop: `${thickness} solid ${color}`,
         width: width,
         margin: margin,
