@@ -19,6 +19,17 @@ const config: Config = {
         "head-notice-text-color": "#767676",
         "top-services-bg": "#F2F2F7",
       },
+      animation:{
+       'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes:{
+        'infinite-scroll': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        }
+
+      }
+      
     },
   },
   plugins: [],

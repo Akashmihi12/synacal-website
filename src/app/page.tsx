@@ -4,6 +4,8 @@ import HeadNotice from "@/components/HeadNotice";
 import TopServices from "@/components/topServices/TopServices";
 import ProductHeader from "@/components/product/ProductHeader";
 import DocumentAssistance from "@/components/document_assistance/DocumentAssistance";
+import SponsorGrid from "@/components/sponsers/SponsorGrid";
+import ProjectGrid from "@/components/projectsDone/ProjectGrid";
 
 export default function Home() {
   return (
@@ -18,7 +20,16 @@ export default function Home() {
         <ProductHeader />
       </div>
       <div className="mt-[106.71px]">
-        <DocumentAssistance/>
+        <DocumentAssistance />
+      </div>
+      <div className="mt-[125.29px]">
+        <SponsorGrid />
+      </div>
+      <div className="mt-[120px]">
+        <ProjectGrid />
+      </div>
+      <div className="mt-[199px]">
+
       </div>
       <div className="h-[40px] w-full bg-background-color"></div>
     </main>
