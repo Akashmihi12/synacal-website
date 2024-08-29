@@ -1,15 +1,15 @@
 import React from 'react'
-import Image from 'next/Image'
+import Image from 'next/image'
 
 
-type DescriptionCardProps={
+type DescriptionCardProps = {
     text1: string,
     text2: string,
     text3: string,
 }
 
 
-function DescriptionCard({text1,text2,text3}: DescriptionCardProps) {
+function DescriptionCard({ text1, text2, text3 }: DescriptionCardProps) {
     return (
         <div className='w-full h-full rounded-[26px]' style={{
             backgroundImage: "linear-gradient(180deg, #EFD7EB, #B8D5FB)",
