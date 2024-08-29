@@ -1,14 +1,17 @@
 import React from "react";
 type ResearchDataBlockProps = {
-  backgroundText?: string
-  date: string
-  content: string
-  imageUrl: string
-
-
-}
-function ResearchDataBlock({ backgroundText, date, content, imageUrl }: ResearchDataBlockProps) {
-  const url = 'url(' + imageUrl + ')'
+  backgroundText?: string;
+  date: string;
+  content: string;
+  imageUrl: string;
+};
+function ResearchDataBlock({
+  backgroundText,
+  date,
+  content,
+  imageUrl,
+}: ResearchDataBlockProps) {
+  const url = "url(" + imageUrl + ")";
   return (
     <div className="w-full h-full  grid grid-rows-[68%,32%] relative rounded-2xl">
       <div className="w-full h-full  relative rounded-2xl">
