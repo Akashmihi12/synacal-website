@@ -6,6 +6,8 @@ import ProductHeader from "@/components/product/ProductHeader";
 import DocumentAssistance from "@/components/document_assistance/DocumentAssistance";
 import SponsorGrid from "@/components/sponsers/SponsorGrid";
 import ProjectGrid from "@/components/projectsDone/ProjectGrid";
+import FeedBackRow from "@/components/feedback/feedbackrow";
+import LatestResearch from "@/components/research/LatestResearch";
 
 export default function Home() {
   return (
@@ -29,7 +31,10 @@ export default function Home() {
         <ProjectGrid />
       </div>
       <div className="mt-[199px]">
-
+        <FeedBackRow />
+      </div>
+      <div className="mt-[68px]">
+        <LatestResearch />
       </div>
       <div className="h-[40px] w-full bg-background-color"></div>
     </main>
