@@ -8,6 +8,8 @@ import SponsorGrid from "@/components/sponsers/SponsorGrid";
 import ProjectGrid from "@/components/projectsDone/ProjectGrid";
 import FeedBackRow from "@/components/feedback/feedbackrow";
 import LatestResearch from "@/components/research/LatestResearch";
+import Started_bar from "@/components/getstarted/Started_bar";
+import QandABlock from "@/components/q_and_a/QandABlock";
 
 export default function Home() {
   return (
@@ -36,6 +38,13 @@ export default function Home() {
       <div className="mt-[68px]">
         <LatestResearch />
       </div>
+      <div className="mt-[154px]">
+        <Started_bar />
+      </div>
+      <div className="mt-[134px]">
+        <QandABlock />
+      </div>
+
       <div className="h-[40px] w-full bg-background-color"></div>
     </main>
   );
