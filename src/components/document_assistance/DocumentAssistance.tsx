@@ -1,8 +1,16 @@
+'use client'
 import React from "react";
 import DocumentAssistanceText from "./DocumentAssistanceText";
 import ImageSection from "./ImageSection";
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer';
 
 function DocumentAssistance() {
+  const [ref1, inView1] = useInView({ triggerOnce: false });
+  const [ref2, inView2] = useInView({ triggerOnce: false });
+  const [ref3, inView3] = useInView({ triggerOnce: false });
+  const [ref4, inView4] = useInView({ triggerOnce: false });
+  const [ref5, inView5] = useInView({ triggerOnce: false });
   const data = [
     {
       title: "Discover DOXPLORE Your Intelligent Document Assistant",
@@ -28,14 +36,18 @@ function DocumentAssistance() {
   return (
     <div className="w-full h-[1492.71px] ">
       <div className="h-full w-full grid grid-rows-2 gap-y-[113.29px] grid-cols-2 gap-x-[0.8%]">
-        <div
+        <motion.div
+          ref={ref1}
+          initial={{ opacity: 0, y: -200 }}
+          animate={inView1 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1, delay: 0.5 }}
           className="w-full h-full rounded-2xl "
           style={{
             backgroundImage: "linear-gradient(180deg, #EFD7EB, #B8D5FB)",
           }}
         >
           <ImageSection />
-        </div>
+        </motion.div>
         <div className="w-full h-full flex ml-[15%] items-center ">
           <div className="w-[65%] h-[538px] ">
             <DocumentAssistanceText
@@ -54,14 +66,18 @@ function DocumentAssistance() {
             />
           </div>
         </div>
-        <div
+        <motion.div
+          ref={ref2}
+          initial={{ opacity: 0, y: 200 }}
+          animate={inView2 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1, delay: 0.5 }}
           className="w-full h-full rounded-2xl"
           style={{
             backgroundImage: "linear-gradient(180deg, #EFD7EB, #B8D5FB)",
           }}
         >
           <ImageSection />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

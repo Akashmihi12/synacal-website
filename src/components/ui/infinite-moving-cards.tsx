@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export const InfiniteMovingCards = ({
   items,
@@ -29,7 +30,6 @@ export const InfiniteMovingCards = ({
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   useEffect(() => {
-    console.log("useEffectTest");
     addAnimation();
   }, []);
 
@@ -77,7 +77,6 @@ export const InfiniteMovingCards = ({
   };
 
   const handleClick = (index: number) => {
-    console.log("handleClick");
     setActiveIndex(activeIndex === index ? null : index);
   };
 
@@ -99,7 +98,7 @@ export const InfiniteMovingCards = ({
         )}
       >
         {items.map((item, idx) => (
-          <li
+          <motion.li
             key={item.name}
             className={cn(
               "w-full max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 cursor-pointer transition-transform duration-300",
@@ -110,7 +109,8 @@ export const InfiniteMovingCards = ({
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900))",
             }}
             onClick={() => handleClick(idx)}
-            // onClick={() => console.log("Clicked item:", idx)}
+            whileHover={{ scale: 1.05 }} 
+            transition={{ duration: 0.3 }} 
           >
             <blockquote>
               <div className="relative z-20 mt-6 flex flex-row items-center">
@@ -142,7 +142,7 @@ export const InfiniteMovingCards = ({
                 {item.quote}
               </span>
             </blockquote>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </div>

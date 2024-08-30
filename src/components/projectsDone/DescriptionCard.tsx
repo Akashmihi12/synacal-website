@@ -1,5 +1,8 @@
+'use client'
 import React from "react";
 import Image from "next/image";
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer';
 
 type DescriptionCardProps = {
   text1: string;
@@ -8,8 +11,17 @@ type DescriptionCardProps = {
 };
 
 function DescriptionCard({ text1, text2, text3 }: DescriptionCardProps) {
+  const [ref1, inView1] = useInView({ triggerOnce: false });
+  const [ref2, inView2] = useInView({ triggerOnce: false });
+  const [ref3, inView3] = useInView({ triggerOnce: false });
+  const [ref4, inView4] = useInView({ triggerOnce: false });
+  const [ref5, inView5] = useInView({ triggerOnce: false });
   return (
-    <div
+    <motion.div
+      ref={ref1}
+      initial={{ opacity: 0 }}
+      animate={inView1 ? { opacity: 1 } : {}}
+      transition={{ duration: 1, delay: 0.5 }}
       className="w-full h-full rounded-[26px]"
       style={{
         backgroundImage: "linear-gradient(180deg, #EFD7EB, #B8D5FB)",
@@ -29,32 +41,47 @@ function DescriptionCard({ text1, text2, text3 }: DescriptionCardProps) {
           </div>
         </div>
         <div className=" rounded-[26px] flex items-center justify-center">
-          <div className="w-[90%] ">
-            <div className="">
-              <span className="text-[56px] leading-[64px] font-[600px] text-[#000000]">
+          <div className="w-[90%]  ">
+            <div className="  flex justify-between">
+              <motion.div
+                ref={ref2}
+                initial={{ opacity: 0, y: -250 }}
+                animate={inView2 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 1, delay: 2.5, type: 'spring', stiffness: 100, damping: 7 }}
+                className="text-[56px] leading-[64px] font-[600px] text-[#000000] inline-block"
+              >
                 {text1}
-              </span>
-              <span
-                className="text-[56px] leading-[64px] font-[600px]"
+              </motion.div>
+              <motion.div
+                ref={ref3}
+                initial={{ opacity: 0 }}
+                animate={inView3 ? { opacity: 1 } : {}}
+                transition={{ duration: 1, delay: 3.5 }}
+                className="text-[56px] leading-[64px] font-[600px] inline-block pr-3"
                 style={{
                   backgroundImage: "linear-gradient(90deg, #CF71ED, #3335E2)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                {" "}
                 {text2}
-              </span>
+              </motion.div>
             </div>
-            <div>
+
+            <motion.div
+              ref={ref4}
+              initial={{ opacity: 0 }}
+              animate={inView4 ? { opacity: 1 } : {}}
+              transition={{ duration: 1, delay: 4.5 }}
+            >
               <span className="text-[32px] leading-[40px] font-[500px] text-[#000000]">
                 {text3}
               </span>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
