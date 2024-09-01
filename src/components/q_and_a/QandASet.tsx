@@ -49,11 +49,11 @@ const FAQComponent = () => {
       {faqData.map((item, index) => (
         <AnimatePresence key={index}>
           <motion.div
-          ref={ref1}
+            ref={ref1}
             className="p-4 bg-transparent border-b-[0.5px] border-[#ECECEC]"
             initial={{ opacity: 0, y: 20 }}
-            animate={inView1?{ opacity: 1, y: 0 }:{}}
-            exit={{ opacity: 0, y: 20 }}
+            animate={inView1 ? { opacity: 1, y: 0 } : {}}
+
             transition={{ duration: 2, delay: index * 0.2 }}
           >
             <div
@@ -74,11 +74,11 @@ const FAQComponent = () => {
             </div>
             {openIndex === index && (
               <motion.div
-              ref={ref1}
+                ref={ref1}
                 className="mt-2 text-[#31323E] text-[14px] font-medium leading-[24px] ml-11"
                 initial={{ opacity: 0, height: 0 }}
-                animate={inView1?{ opacity: 1, height: "auto" }:{}}
-                exit={{ opacity: 0, height: 0 }}
+                animate={inView1 ? { opacity: 1, height: "auto" } : {}}
+
                 transition={{ duration: 0.5 }}
               >
                 {item.answer}
