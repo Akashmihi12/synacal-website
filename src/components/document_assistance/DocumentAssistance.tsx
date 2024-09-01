@@ -1,9 +1,9 @@
-'use client'
+"use client";
 import React from "react";
 import DocumentAssistanceText from "./DocumentAssistanceText";
 import ImageSection from "./ImageSection";
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function DocumentAssistance() {
   const [ref1, inView1] = useInView({ triggerOnce: false });

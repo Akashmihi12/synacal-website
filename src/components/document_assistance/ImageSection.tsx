@@ -1,8 +1,8 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function ImageSection() {
   const [ref1, inView1] = useInView({ triggerOnce: false });
@@ -18,7 +18,8 @@ function ImageSection() {
             initial={{ opacity: 0, y: -10 }}
             animate={inView1 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1.4, delay: 2.5 }}
-            className="w-full h-[66.64px]  rounded-[13.88px] overflow-hidden relative">
+            className="w-full h-[66.64px]  rounded-[13.88px] overflow-hidden relative"
+          >
             <Image
               src="/price.svg"
               alt="Price Tag"
@@ -32,7 +33,8 @@ function ImageSection() {
             initial={{ opacity: 0, y: -40 }}
             animate={inView2 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1.2, delay: 1.5 }}
-            className="w-full h-[213.24px]  rounded-[13.88px] overflow-hidden relative">
+            className="w-full h-[213.24px]  rounded-[13.88px] overflow-hidden relative"
+          >
             <Image
               src="/Calender.svg"
               alt="Calender Tag"
@@ -46,7 +48,8 @@ function ImageSection() {
             initial={{ opacity: 0, y: -60 }}
             animate={inView3 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.5 }}
-            className="w-full h-[204.35px]  rounded-[13.88px] overflow-hidden relative">
+            className="w-full h-[204.35px]  rounded-[13.88px] overflow-hidden relative"
+          >
             <Image
               src="/Shedule.svg"
               alt="Shedule Tag"
@@ -58,10 +61,11 @@ function ImageSection() {
         </div>
         <motion.div
           ref={ref4}
-          initial={{ opacity: 0, }}
-          animate={inView4 ? { opacity: 1, } : {}}
+          initial={{ opacity: 0 }}
+          animate={inView4 ? { opacity: 1 } : {}}
           transition={{ duration: 3, delay: 0.5 }}
-          className="w-[66.1%] h-full  rounded-[13.88px] overflow-x-hidden relative">
+          className="w-[66.1%] h-full  rounded-[13.88px] overflow-x-hidden relative"
+        >
           <Image
             src="/dashboard.svg"
             alt="dashboard Tag"

@@ -1,11 +1,10 @@
-'use client'
+"use client";
 import React from "react";
 import TopServicesBlock from "./TopServicesBlock";
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function TopServicesGrid() {
-
   const [refParent, inViewParent] = useInView({ triggerOnce: false });
 
   const [ref2, inView2] = useInView({ triggerOnce: false });

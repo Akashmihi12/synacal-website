@@ -1,8 +1,8 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 type DescriptionCardProps = {
   text1: string;
@@ -47,7 +47,13 @@ function DescriptionCard({ text1, text2, text3 }: DescriptionCardProps) {
                 ref={ref2}
                 initial={{ opacity: 0, y: -250 }}
                 animate={inView2 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 1, delay: 2.5, type: 'spring', stiffness: 100, damping: 7 }}
+                transition={{
+                  duration: 1,
+                  delay: 2.5,
+                  type: "spring",
+                  stiffness: 100,
+                  damping: 7,
+                }}
                 className="text-[56px] leading-[64px] font-[600px] text-[#000000] inline-block"
               >
                 {text1}
