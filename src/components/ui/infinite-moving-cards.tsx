@@ -109,8 +109,8 @@ export const InfiniteMovingCards = ({
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900))",
             }}
             onClick={() => handleClick(idx)}
-            whileHover={{ scale: 1.05 }} 
-            transition={{ duration: 0.3 }} 
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
           >
             <blockquote>
               <div className="relative z-20 mt-6 flex flex-row items-center">

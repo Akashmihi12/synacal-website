@@ -1,13 +1,11 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { AuroraBackground } from "../getstarted/Aurora_background";
 
-
 function ProductHeader() {
-
   const [ref1, inView1] = useInView({ triggerOnce: false });
   const [ref2, inView2] = useInView({ triggerOnce: false });
   const [ref3, inView3] = useInView({ triggerOnce: false });
@@ -43,7 +41,8 @@ function ProductHeader() {
             className="w-full h-[64px] mt-[8px]"
           >
             <span className="text-[20px] font-normal leading-[32px] text-[#EDEDED]">
-              Explore our innovative products that drive your success and efficiency.
+              Explore our innovative products that drive your success and
+              efficiency.
             </span>
           </motion.div>
           <div className="w-full h-[66px] flex items-end gap-[4px]">
@@ -51,7 +50,12 @@ function ProductHeader() {
               ref={ref3}
               initial={{ opacity: 0, rotate: -5 }}
               animate={inView3 ? { opacity: 1, rotate: 0 } : {}}
-              transition={{ duration: 4, delay: 2, type: "spring", stiffness: 300 }}
+              transition={{
+                duration: 4,
+                delay: 2,
+                type: "spring",
+                stiffness: 300,
+              }}
               className="h-[42px] w-[27.85%] cursor-pointer"
             >
               <motion.div
@@ -68,7 +72,12 @@ function ProductHeader() {
               ref={ref4}
               initial={{ opacity: 0, rotate: -5 }}
               animate={inView4 ? { opacity: 1, rotate: 0 } : {}}
-              transition={{ duration: 4, delay: 2.3, type: "spring", stiffness: 300 }}
+              transition={{
+                duration: 4,
+                delay: 2.3,
+                type: "spring",
+                stiffness: 300,
+              }}
               className="h-[42px] w-[27.85%] flex items-center justify-center 
               text-main-gradient hover:text-transparent hover:bg-clip-text 
               hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2] cursor-pointer user-select-none"
@@ -85,14 +94,26 @@ function ProductHeader() {
           </div>
         </div>
         <motion.div
-        ref={ref5}
+          ref={ref5}
           initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
-          animate={inView5?{ opacity: 1, scale: 1, rotate: 0, type: 'spring' }:{}}
+          animate={
+            inView5 ? { opacity: 1, scale: 1, rotate: 0, type: "spring" } : {}
+          }
           whileHover={{ scale: 0.9, rotate: 10 }}
-          transition={{ duration: 2, ease: "easeOut", type: "spring", stiffness: 120 }}
+          transition={{
+            duration: 2,
+            ease: "easeOut",
+            type: "spring",
+            stiffness: 120,
+          }}
           className="w-[28%] h-[91.53%] cursor-pointer"
         >
-          <Image src="/product/Icon.svg" alt="Cubic" width={411.84} height={411.84} />
+          <Image
+            src="/product/Icon.svg"
+            alt="Cubic"
+            width={411.84}
+            height={411.84}
+          />
         </motion.div>
       </div>
     </AuroraBackground>

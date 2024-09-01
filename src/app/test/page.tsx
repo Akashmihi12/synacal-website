@@ -1,8 +1,7 @@
-
-'use client'
-import App from '@/components/textStyles/TextAnimation'
-import React from 'react'
-import { motion } from 'framer-motion'
+"use client";
+import App from "@/components/textStyles/TextAnimation";
+import React from "react";
+import { motion } from "framer-motion";
 
 function page() {
   return (
@@ -10,13 +9,10 @@ function page() {
       <motion.div
         initial={{ x: 0 }}
         animate={{ x: 300 }}
-        className='w-[100px] h-[100px] bg-green-500'>
-
-      </motion.div>
-
+        className="w-[100px] h-[100px] bg-green-500"
+      ></motion.div>
     </div>
-
-  )
+  );
 }
 
-export default page
+export default page;

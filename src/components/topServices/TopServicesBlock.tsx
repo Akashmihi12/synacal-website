@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 type TopServicesBlockProps = {
   imageUrl: string;
@@ -32,7 +32,7 @@ function TopServicesBlock({
         <motion.span
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.5, }}
+          transition={{ duration: 1, delay: 0.5 }}
           className="text-[20px] leading-[32px] font-normal text-black"
         >
           {description}
@@ -43,11 +43,9 @@ function TopServicesBlock({
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.1 }}
           className="h-[42px] rounded-[57px] w-[128px] gap-[4px] border-[1px] border-black text-center 
-        flex items-center justify-center text-black font-semibold text-[14px] cursor-pointer  text-main-gradient hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]">
-          <span className="">
-            Read More
-          </span>
-
+        flex items-center justify-center text-black font-semibold text-[14px] cursor-pointer  text-main-gradient hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]"
+        >
+          <span className="">Read More</span>
         </motion.div>
       </div>
     </div>

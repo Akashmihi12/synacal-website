@@ -1,6 +1,6 @@
-'use client'
+"use client";
 import React from "react";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 function HeadNotice() {
   return (
@@ -39,7 +39,6 @@ function HeadNotice() {
               {" "}
               biz growth.
             </motion.span>
-
           </div>
 
           <motion.span
@@ -61,7 +60,12 @@ function HeadNotice() {
           className="flex justify-center items-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.7, type: "spring", stiffness: 100 }}
+          transition={{
+            duration: 0.6,
+            delay: 0.7,
+            type: "spring",
+            stiffness: 100,
+          }}
         >
           <div className="w-[72%] h-[48px] mt-[20px] flex items-center justify-center">
             <motion.span
@@ -81,7 +85,12 @@ function HeadNotice() {
           className="w-full h-full flex items-end justify-center"
           initial={{ opacity: 0, rotate: -5 }}
           animate={{ opacity: 1, rotate: 0 }}
-          transition={{ duration: 1, delay: 1.3, type: "spring", stiffness: 300 }}
+          transition={{
+            duration: 1,
+            delay: 1.3,
+            type: "spring",
+            stiffness: 300,
+          }}
         >
           <motion.div
             whileTap={{ scale: 0.9 }}
@@ -92,11 +101,11 @@ function HeadNotice() {
               left: -5,
               right: 5,
               bottom: 5,
-            }
-            }
+            }}
             className="h-[42px] rounded-[57px] w-[192px] gap-[4px] border-[1px] border-black text-center 
             flex items-center justify-center text-black font-semibold text-[14px] cursor-grab
-             hover:border-main-gradient text-main-gradient hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]">
+             hover:border-main-gradient text-main-gradient hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]"
+          >
             <span className="cursor-pointer ">Let’s Innovate Together</span>
           </motion.div>
         </motion.div>

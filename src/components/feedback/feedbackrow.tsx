@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Feedbakrowblok from "./Feedbakrowblok";
+import { motion } from "framer-motion";
 
 function FeedBackRow() {
   return (

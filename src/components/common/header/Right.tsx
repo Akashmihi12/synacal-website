@@ -1,6 +1,6 @@
-'use client'
+"use client";
 import React from "react";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 function GradientBorderDiv() {
   return (
@@ -13,8 +13,6 @@ function GradientBorderDiv() {
       justify-center text-black border-black font-semibold text-[14px] 
       cursor-grab border-[1px] hover:border-main-gradient "
     >
-
-
       {/* Content */}
       <div className="relative z-10 text-main-gradient hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2] ">
         <span className="cursor-pointer">Contact Us</span>

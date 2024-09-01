@@ -1,12 +1,11 @@
-'use client'
+"use client";
 import React from "react";
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import DescriptionCard from "./DescriptionCard";
 import Image from "next/image";
 
 function ProjectGrid() {
-
   const [ref1, inView1] = useInView({ triggerOnce: false });
   const [ref2, inView2] = useInView({ triggerOnce: false });
   const [ref3, inView3] = useInView({ triggerOnce: false });
@@ -21,7 +20,8 @@ function ProjectGrid() {
             initial={{ opacity: 0, y: -200 }}
             animate={inView1 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.5 }}
-            className=" rounded-[26px]">
+            className=" rounded-[26px]"
+          >
             <DescriptionCard text1="100+" text2="Projects" text3="Deceived" />
           </motion.div>
           <motion.div
@@ -29,7 +29,8 @@ function ProjectGrid() {
             initial={{ opacity: 0, x: 250 }}
             animate={inView2 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 0.5 }}
-            className="w-full h-[424px] rounded-[26px]">
+            className="w-full h-[424px] rounded-[26px]"
+          >
             <div className="w-full h-full rounded-[26px] overflow-hidden relative ">
               <Image
                 src="/videothumbnail1.svg"
@@ -47,7 +48,8 @@ function ProjectGrid() {
             initial={{ opacity: 0, x: -250 }}
             animate={inView3 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 0.5 }}
-            className="w-full h-[424px] rounded-[26px]">
+            className="w-full h-[424px] rounded-[26px]"
+          >
             <div className="w-full h-[424px] rounded-[26px] overflow-hidden relative ">
               <Image
                 src="/videothumbnail2.svg"
@@ -63,7 +65,8 @@ function ProjectGrid() {
             initial={{ opacity: 0, y: 200 }}
             animate={inView4 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1, delay: 0.5 }}
-            className=" rounded-[26px]">
+            className=" rounded-[26px]"
+          >
             <DescriptionCard text1="20+" text2="Satisfied" text3="Clients" />
           </motion.div>
         </div>
