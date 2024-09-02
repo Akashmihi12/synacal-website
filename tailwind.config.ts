@@ -12,20 +12,28 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      aspectRatio: {
+        '16/9': '16 / 9',
+        
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "main-gradient": "linear-gradient(90deg, #CF71ED 0%, #3335E2 100%)",
+        "sub-section-gradient": "linear-gradient(180deg, #EFD7EB 0%, #B8D5FB 100%)",
       },
       colors: {
         "background-color": "#FFFFFFCC",
         "drop-Down-text-color": "#83848B",
         "head-notice-text-color": "#767676",
         "top-services-bg": "#F2F2F7",
+        "custom-gradient-start": "#CF71ED",
+        "custom-gradient-end": "#3335E2",
       },
       animation: {
-        "infinite-scroll": "infinite-scroll 10s linear infinite",
+        "infinite-scroll": "infinite-scroll_forward 1000s linear infinite",
+        "infinite-scroll_2": "infinite-scroll_backward 1000s linear infinite",
         aurora: "aurora 60s linear infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
@@ -33,15 +41,19 @@ const config: Config = {
       keyframes: {
         aurora: {
           from: {
-            backgroundPosition: "50% 50%, 50% 50%",
-          },
-          to: {
             backgroundPosition: "350% 50%, 350% 50%",
           },
+          to: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
         },
-        "infinite-scroll": {
+        "infinite-scroll_forward": {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
+        },
+        "infinite-scroll_backward": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(50%)" },
         },
         scroll: {
           to: {

@@ -1,52 +1,54 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const images = [
-  { src: "/logo/whatsapp.svg", alt: "whatsapp" },
   { src: "/logo/british.svg", alt: "British council" },
   { src: "/logo/linkedin.svg", alt: "Linkedin" },
   { src: "/logo/whatsapp.svg", alt: "whatsapp" },
   { src: "/logo/yamaha.svg", alt: "Yamaha" },
   { src: "/logo/redbull.svg", alt: "Red Bull" },
-  { src: "/logo/yamaha.svg", alt: "Yamaha" },
 ];
 
+const duplicateCount = 10000;
+const duplicatedImages = Array.from(
+  { length: duplicateCount },
+  (_, index) => images[index % images.length],
+);
+
 function SponsorList() {
-  const listRef = useRef<HTMLUListElement>(null);
-
-  useEffect(() => {
-    const ul = listRef.current;
-    if (ul) {
-      const clone = ul.cloneNode(true) as HTMLElement;
-      clone.setAttribute("aria-hidden", "true");
-      ul.parentNode?.appendChild(clone);
-    }
-  }, []);
-
   return (
     <div
-      className="w-full inline-flex flex-nowrap overflow-hidden relative h-[33%] "
+      className="w-full inline-flex flex-nowrap overflow-hidden relative "
       style={{
+        height: "100px",
+
         maskImage:
-          "linear-gradient(to right, transparent 0%, black 128px, black calc(100% - 128px), transparent 100%)",
+          "linear-gradient(to right, transparent 0%, black 50%, transparent 100%)",
       }}
     >
       <ul
-        ref={listRef}
-        className="flex items-center space-x-8 animate-infinite-scroll whitespace-nowrap  h-full"
-        style={{ minWidth: "100%" }}
+        className="flex items-center space-x-8 animate-infinite-scroll whitespace-nowrap"
+        style={{ minWidth: `${duplicatedImages.length * 154.54}px` }}
       >
-        {[...images, ...images].map((image, index) => (
+        {duplicatedImages.map((image, index) => (
           <li key={index} className="inline-block">
-            <Image
-              src={image.src}
-              alt={image.alt}
-              width={154.54}
-              height={50}
-              layout="intrinsic"
-              className="object-contain"
-            />
+            <motion.div
+              whileTap={{ scale: 1.4 }}
+              whileHover={{ scale: 1.4 }}
+              transition={{ duration: 2 }}
+            >
+              <Image
+                onClick={() => console.log(index)}
+                src={image.src}
+                alt={image.alt}
+                width={154.54}
+                height={50}
+                layout="intrinsic"
+                className="object-contain"
+              />
+            </motion.div>
           </li>
         ))}
       </ul>

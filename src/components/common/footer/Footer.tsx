@@ -1,10 +1,9 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
 import IconBar from "./IconBar";
 import CategoryCom from "./CategoryCom";
-import { motion } from 'framer-motion'
-
+import { motion } from "framer-motion";
 
 function Footer() {
   return (
@@ -27,10 +26,15 @@ function Footer() {
                   <motion.div
                     animate={{
                       scale: [1, 1.1, 1],
-                      y: [0, -5, 0]
+                      y: [0, -5, 0],
                     }}
-                    transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-                    className="w-[148px] h-[20px]  relative overflow-hidden">
+                    transition={{
+                      duration: 5,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                    className="w-[148px] h-[20px]  relative overflow-hidden"
+                  >
                     <Image
                       src="/footer/company_logo.svg"
                       alt="company logo"
