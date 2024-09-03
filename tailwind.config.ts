@@ -13,15 +13,15 @@ const config: Config = {
   theme: {
     extend: {
       aspectRatio: {
-        '16/9': '16 / 9',
-        
+        "16/9": "16 / 9",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "main-gradient": "linear-gradient(90deg, #CF71ED 0%, #3335E2 100%)",
-        "sub-section-gradient": "linear-gradient(180deg, #EFD7EB 0%, #B8D5FB 100%)",
+        "sub-section-gradient":
+          "linear-gradient(180deg, #EFD7EB 0%, #B8D5FB 100%)",
       },
       colors: {
         "background-color": "#FFFFFFCC",

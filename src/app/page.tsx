@@ -16,11 +16,12 @@ export default function Home() {
     <main>
       <div className=" mt-[106px] w-full bg-background-color">
         <HeadNotice
-          text1='Tech boosts'
-          specialText='biz growth.'
-          text2='We’ve got you Covered.'
-          description='Embracing technology is crucial for the growth of your business, and our cutting-edge solutions empower you to thrive in the ever-evolving digital landscape.'
-          button_text='Let’s Innovate Together' />
+          text1="Tech boosts"
+          specialText="biz growth."
+          text2="We’ve got you Covered."
+          description="Embracing technology is crucial for the growth of your business, and our cutting-edge solutions empower you to thrive in the ever-evolving digital landscape."
+          button_text="Let’s Innovate Together"
+        />
       </div>
       <div className="mt-[98px] w-full bg-background-color">
         <TopServices />

@@ -3,14 +3,20 @@ import React from "react";
 import { motion } from "framer-motion";
 
 type HeadNoticeProps = {
-  text1: string,
-  specialText: string,
-  text2: string,
-  description: string
-  button_text: string
-}
+  text1: string;
+  specialText: string;
+  text2: string;
+  description: string;
+  button_text: string;
+};
 
-function HeadNotice({ text1, specialText, description, button_text, text2 }: HeadNoticeProps) {
+function HeadNotice({
+  text1,
+  specialText,
+  description,
+  button_text,
+  text2,
+}: HeadNoticeProps) {
   return (
     <div className="w-full flex justify-center ">
       <div className="w-[80%] flex flex-col items-center">
