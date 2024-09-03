@@ -5,6 +5,10 @@ import Block from './Block'
 import { useInView } from "react-intersection-observer";
 import { motion } from 'framer-motion'
 
+type GridSectionProps = {
+    gridData: string[],
+}
+
 function GridSection() {
     const [ref1, inView1] = useInView({ triggerOnce: false });
     return (

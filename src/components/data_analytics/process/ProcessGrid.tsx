@@ -1,6 +1,36 @@
 import React from 'react'
 import GridSection from './GridSection'
 
+
+
+const gridData={
+    grid1: {
+        title: 'Uncover Insights Hidden in Your Data',
+        description: 'We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage.',
+        image: '/process/Icon1.svg',
+    },
+    grid2: {
+        title: 'Transform Data into Quality Insights',
+        description: 'We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage.',
+        image: '/process/Icon2.svg',
+    },
+    grid3: {
+        title: 'Extracting Value from Data',
+        description: 'We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage.',
+        image: '/process/Icon3.svg',
+    },
+    grid4: {
+        title: 'Anticipate Future Trends',
+        description: 'We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage.',
+        image: '/process/Icon4.svg',
+    },
+    grid5: {
+        title: 'Continuously Enhance Your Analytics',
+        description: 'We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage.',
+        image: '/process/Icon5.svg',
+    },
+}
+
 function ProcessGrid() {
     return (
         <div className="w-full  flex items-center justify-center">
@@ -9,7 +39,7 @@ function ProcessGrid() {
                     <div className="text-[40px] font-[600] leading-[47.73px] text-black  mb-12 mt-10">
                         Understanding the Process
                     </div>
-                    <GridSection />
+                    <GridSection  />
                 </div>
 
             </div>
