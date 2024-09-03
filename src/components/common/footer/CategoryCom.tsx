@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 type CategoryComProps = {
   Category: string;
@@ -30,10 +30,11 @@ function CategoryCom({
       <motion.h1
         animate={{
           scale: [1, 1.1, 1],
-          y: [0, -2, 0]
+          y: [0, -2, 0],
         }}
-        transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-        className="text-[16px] font-medium leading-[24px] mb-4">
+        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+        className="text-[16px] font-medium leading-[24px] mb-4"
+      >
         {Category}
       </motion.h1>
 

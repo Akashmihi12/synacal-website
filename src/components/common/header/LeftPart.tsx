@@ -1,17 +1,16 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 function LeftPart() {
   return (
     <motion.div
       animate={{
         scale: [1, 1.2, 1],
-        y: [0, -5, 0]
+        y: [0, -5, 0],
       }}
-      transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-
+      transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
     >
       <Image
         src="/logo/synacal_logo.png"
@@ -20,7 +19,6 @@ function LeftPart() {
         height={20}
       />
     </motion.div>
-
   );
 }
 

@@ -30,5 +30,11 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-
+  .animate-pause {
+    animation-play-state: paused;
+  }
+  
 }
+
+
+

@@ -53,7 +53,6 @@ const FAQComponent = () => {
             className="p-4 bg-transparent border-b-[0.5px] border-[#ECECEC]"
             initial={{ opacity: 0, y: 20 }}
             animate={inView1 ? { opacity: 1, y: 0 } : {}}
-
             transition={{ duration: 2, delay: index * 0.2 }}
           >
             <div
@@ -61,8 +60,11 @@ const FAQComponent = () => {
               onClick={() => handleToggle(index)}
             >
               <span
-                className={`mr-3 inline-block w-8 h-8 text-center ${openIndex === index ? "bg-transparent text-[#CF71ED]" : "bg-transparent text-[#CF71ED]"
-                  } flex items-center justify-center`}
+                className={`mr-3 inline-block w-8 h-8 text-center ${
+                  openIndex === index
+                    ? "bg-transparent text-[#CF71ED]"
+                    : "bg-transparent text-[#CF71ED]"
+                } flex items-center justify-center`}
               >
                 {openIndex === index ? "-" : "+"}
               </span>
@@ -78,7 +80,6 @@ const FAQComponent = () => {
                 className="mt-2 text-[#31323E] text-[14px] font-medium leading-[24px] ml-11"
                 initial={{ opacity: 0, height: 0 }}
                 animate={inView1 ? { opacity: 1, height: "auto" } : {}}
-
                 transition={{ duration: 0.5 }}
               >
                 {item.answer}

@@ -25,23 +25,26 @@ export function AuroraBackgroundDemo() {
                 animate={{
                   scale: [1, 1.2, 1],
                   rotate: [0, 10, 0],
-                  y: [0, -10, 0]
+                  y: [0, -10, 0],
                 }}
                 whileHover={{
                   scale: 1.5,
                   rotate: 20,
                   y: -15,
-                  transition: { type: 'spring', stiffness: 400 }
+                  transition: { type: "spring", stiffness: 400 },
                 }}
                 whileTap={{
                   scale: 0.8,
                   rotate: -10,
                   y: 10,
-                  transition: { type: 'spring', stiffness: 400 }
+                  transition: { type: "spring", stiffness: 400 },
                 }}
-                
-                transition={{ duration: 1, repeat: Infinity, ease: 'easeInOut' }}
-                style={{ fontSize: '2rem' }}
+                transition={{
+                  duration: 1,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                style={{ fontSize: "2rem" }}
               >
                 ✌️
               </motion.div>
@@ -58,7 +61,6 @@ export function AuroraBackgroundDemo() {
           </div>
         </div>
         <motion.button
-
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.1 }}
           drag
@@ -70,9 +72,9 @@ export function AuroraBackgroundDemo() {
           }}
           className="bg-transparent  rounded-full border-white text-white border-[1px] w-fit  px-4 py-2
           cursor-pointer 
-      hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2] hover:border-gradient">
+      hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2] hover:border-gradient"
+        >
           <span>Let`s Innovate Together</span>
-
         </motion.button>
       </motion.div>
     </AuroraBackground>

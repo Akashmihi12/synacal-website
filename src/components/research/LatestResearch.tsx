@@ -28,7 +28,7 @@ function LatestResearch() {
           <div className="h-full w-[11%]">
             <motion.div
               ref={ref1}
-              initial={{ opacity: 0, }}
+              initial={{ opacity: 0 }}
               animate={inView1 ? { opacity: 1 } : {}}
               transition={{ duration: 2, delay: 0.5 }}
               whileTap={{ scale: 0.9 }}
@@ -50,9 +50,7 @@ function LatestResearch() {
           </div>
         </div>
         <div className="w-full h-[988px]  grid grid-rows-[57%,43%] gap-[16px]">
-          <motion.div
-
-            className="w-full h-full  grid grid-cols-2 gap-3">
+          <motion.div className="w-full h-full  grid grid-cols-2 gap-3">
             <motion.div
               ref={ref2}
               initial={{ opacity: 0, scale: 0.8 }}
@@ -79,14 +77,14 @@ function LatestResearch() {
                 content="Unlock intelligent information retrieval with Doxplore, our AI-powered software that revolutionizes exploring and extracting insights from large document sets."
               />
             </motion.div>
-
           </motion.div>
           <div className="w-full h-full  grid grid-cols-3 gap-3">
             <motion.div
               ref={ref3}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={inView3 ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 1.5, delay: 0.5 }}>
+              transition={{ duration: 1.5, delay: 0.5 }}
+            >
               <ResearchDataBlock
                 date="Published 20 November, 2024"
                 imageUrl="/research/subresearch1.svg"
@@ -98,7 +96,8 @@ function LatestResearch() {
               ref={ref3}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={inView3 ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 1.5, delay: 1.2 }}>
+              transition={{ duration: 1.5, delay: 1.2 }}
+            >
               <ResearchDataBlock
                 date="Published 20 November, 2024"
                 imageUrl="/research/subresearch2.svg"
@@ -110,14 +109,14 @@ function LatestResearch() {
               ref={ref3}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={inView3 ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 1.5, delay: 1.9 }}>
+              transition={{ duration: 1.5, delay: 1.9 }}
+            >
               <ResearchDataBlock
                 date="Published 20 November, 2024"
                 imageUrl="/research/subresearch3.svg"
                 content="Unlock intelligent information retrieval with Doxplore, our AI-powered software that revolutionizes exploring and extracting insights from large document sets."
               />
             </motion.div>
-
           </div>
         </div>
       </div>
