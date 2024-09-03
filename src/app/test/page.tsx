@@ -39,7 +39,7 @@
 //       style={{
 //         width: 'full',
 //         height: "300px",
-       
+
 //       }}
 //     >
 //       <div className="w-[100px] h-[100px] bg-red-400">
