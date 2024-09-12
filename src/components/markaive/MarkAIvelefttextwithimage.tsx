@@ -11,30 +11,6 @@ const MarkAIvelefttextwithimage = () => {
   const [ref3, inView3] = useInView({ triggerOnce: false });
   const [ref4, inView4] = useInView({ triggerOnce: false });
 
-  // Button animation configuration
-  const buttonVariants = {
-    hidden: { opacity: 0, scale: 0.9, y: 50 },
-    visible: (delay) => ({
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        delay,
-        ease: "easeOut",
-        type: "spring",
-        stiffness: 100,
-      },
-    }),
-    hover: {
-      scale: 1.1,
-      color: "#CF71ED",
-      backgroundImage: "linear-gradient(90deg, #CF71ED, #3335E2)",
-      WebkitBackgroundClip: "text",
-      WebkitTextFillColor: "transparent",
-    },
-  };
-
   return (
     <div className="w-full py-12 flex justify-center">
       <div className="w-[85%] max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 bg-white p-8 rounded-lg shadow-md">
@@ -56,60 +32,80 @@ const MarkAIvelefttextwithimage = () => {
             At its core, digital transformation is about leveraging data, automation, and innovation to create a more agile, efficient, and customer-centric organization.
           </p>
 
-          {/* Tag buttons with new animations */}
+          {/* Tag buttons with hover effects */}
           <div className="flex flex-wrap gap-2">
             <motion.button
               ref={ref2}
-              variants={buttonVariants}
-              initial="hidden"
-              animate={inView2 ? "visible" : "hidden"}
-              whileHover="hover"
-              custom={0.1}
-              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full"
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView2 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              whileHover={{
+                scale: 1.1,
+                backgroundImage: "linear-gradient(90deg, #CF71ED, #3335E2)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full text-black hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]"
             >
               Insightful
             </motion.button>
 
             <motion.button
-              variants={buttonVariants}
-              initial="hidden"
-              animate={inView2 ? "visible" : "hidden"}
-              whileHover="hover"
-              custom={0.2}
-              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full"
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView2 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              whileHover={{
+                scale: 1.1,
+                backgroundImage: "linear-gradient(90deg, #CF71ED, #3335E2)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full text-black hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]"
             >
               Strategic
             </motion.button>
 
             <motion.button
-              variants={buttonVariants}
-              initial="hidden"
-              animate={inView2 ? "visible" : "hidden"}
-              whileHover="hover"
-              custom={0.3}
-              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full"
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView2 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              whileHover={{
+                scale: 1.1,
+                backgroundImage: "linear-gradient(90deg, #CF71ED, #3335E2)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full text-black hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]"
             >
               Actionable
             </motion.button>
 
             <motion.button
-              variants={buttonVariants}
-              initial="hidden"
-              animate={inView2 ? "visible" : "hidden"}
-              whileHover="hover"
-              custom={0.4}
-              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full"
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView2 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              whileHover={{
+                scale: 1.1,
+                backgroundImage: "linear-gradient(90deg, #CF71ED, #3335E2)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full text-black hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]"
             >
               Clarity
             </motion.button>
 
             <motion.button
-              variants={buttonVariants}
-              initial="hidden"
-              animate={inView2 ? "visible" : "hidden"}
-              whileHover="hover"
-              custom={0.5}
-              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full"
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView2 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              whileHover={{
+                scale: 1.1,
+                backgroundImage: "linear-gradient(90deg, #CF71ED, #3335E2)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full text-black hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]"
             >
               Discernment
             </motion.button>

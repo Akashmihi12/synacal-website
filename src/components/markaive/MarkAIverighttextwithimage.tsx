@@ -1,13 +1,28 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-import './buttonstyle.css'; // Import the CSS file for button hover effect
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const MarkAIverighttextwithimage = () => {
+  // Using useInView hook to trigger animation on scroll
+  const [ref1, inView1] = useInView({ triggerOnce: false });
+  const [ref2, inView2] = useInView({ triggerOnce: false });
+  const [ref3, inView3] = useInView({ triggerOnce: false });
+  const [ref4, inView4] = useInView({ triggerOnce: false });
+
   return (
     <div className="w-full py-12 flex justify-center">
       <div className="w-[85%] max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 bg-white p-8 rounded-lg shadow-md">
-        {/* Right Image Section */}
-        <div className="flex justify-center">
+        
+        {/* Right Image Section with animation from right to left */}
+        <motion.div
+          ref={ref1}
+          initial={{ opacity: 0, x: 100 }}
+          animate={inView1 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="flex justify-center"
+        >
           <Image
             src="/markaive/MarkAIve_righttext_with_image.png"
             alt="MarkAIve Right Side Image"
@@ -15,10 +30,16 @@ const MarkAIverighttextwithimage = () => {
             height={500}
             className="rounded-lg"
           />
-        </div>
+        </motion.div>
 
-        {/* Left Text Section */}
-        <div className="flex flex-col justify-center">
+        {/* Left Text Section with animation from left to right */}
+        <motion.div
+          ref={ref2}
+          initial={{ opacity: 0, x: -100 }}
+          animate={inView2 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="flex flex-col justify-center"
+        >
           <h2 className="text-3xl font-semibold text-black mb-4">
             A tool that scales with your business
           </h2>
@@ -32,25 +53,85 @@ const MarkAIverighttextwithimage = () => {
             demands.
           </p>
 
-          {/* Tag buttons */}
+          {/* Tag buttons with hover and animation */}
           <div className="flex flex-wrap gap-2">
-            <button className="px-4 py-2 bg-white border section-button text-sm text-black font-semibold">
+            <motion.button
+              ref={ref3}
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView3 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              whileHover={{
+                scale: 1.1,
+                backgroundImage: "linear-gradient(90deg, #CF71ED, #3335E2)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full text-black hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]"
+            >
               Flexible
-            </button>
-            <button className="px-4 py-2 bg-white border section-button text-sm text-black font-semibold">
+            </motion.button>
+
+            <motion.button
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView3 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              whileHover={{
+                scale: 1.1,
+                backgroundImage: "linear-gradient(90deg, #CF71ED, #3335E2)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full text-black hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]"
+            >
               Scalable
-            </button>
-            <button className="px-4 py-2 bg-white border section-button text-sm text-black font-semibold">
+            </motion.button>
+
+            <motion.button
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView3 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              whileHover={{
+                scale: 1.1,
+                backgroundImage: "linear-gradient(90deg, #CF71ED, #3335E2)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full text-black hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]"
+            >
               Powerful
-            </button>
-            <button className="px-4 py-2 bg-white border section-button text-sm text-black font-semibold">
+            </motion.button>
+
+            <motion.button
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView3 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              whileHover={{
+                scale: 1.1,
+                backgroundImage: "linear-gradient(90deg, #CF71ED, #3335E2)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full text-black hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]"
+            >
               Customizable
-            </button>
-            <button className="px-4 py-2 bg-white border section-button text-sm text-black font-semibold">
+            </motion.button>
+
+            <motion.button
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView3 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              whileHover={{
+                scale: 1.1,
+                backgroundImage: "linear-gradient(90deg, #CF71ED, #3335E2)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+              className="px-4 py-2 bg-white border border-black text-sm font-semibold rounded-full text-black hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2]"
+            >
               Agile
-            </button>
+            </motion.button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
