@@ -8,7 +8,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/bg_markaive_hero.png')`, // Path to the background image
+          backgroundImage: `url('/markaive/bg_markaive_hero.png')`, // Path to the background image
         }}
       ></div>
 
@@ -17,7 +17,7 @@ const Hero = () => {
         {/* Container for the main hero image */}
         <div className="w-[85%] max-w-7xl">
           <Image
-            src="/markaive_hero.png" // Path to the hero image
+            src="/markaive/markaive_hero.png" // Path to the hero image
             alt="MarkAIve Hero Image"
             width={1600} // Adjusted width
             height={900} // Adjusted height

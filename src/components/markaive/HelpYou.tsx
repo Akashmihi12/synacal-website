@@ -60,7 +60,7 @@ const HelpYou = () => {
         {/* Right Image Section */}
         <div className="flex justify-center items-center">
           <Image
-            src="/MarkAIve_Help_You.png" // Path to the image in the public folder
+            src="/markaive/MarkAIve_Help_You.png"            // Path to the image in the public folder
             alt="Help You"
             width={500}
             height={500}

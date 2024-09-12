@@ -30,7 +30,7 @@ const cardData = [
 
 const MarkAIveCards = () => {
   return (
-    <div className="relative w-full py-12 bg-cover bg-center" style={{ backgroundImage: `url('/markaive_cards_section_bg.png')` }}>
+    <div className="relative w-full py-12 bg-cover bg-center" style={{ backgroundImage: `url('/markaive/markaive_cards_section_bg.png')` }}>
       {/* Cards Section */}
       <div className="w-[85%] max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 relative z-10">
         {cardData.map((card) => (
@@ -58,7 +58,7 @@ const MarkAIveCards = () => {
       {/* Hero Image below cards */}
       <div className="relative w-full flex justify-center mt-8">
         <Image
-          src="/markaive_cards_section.png" // Path to the hero image
+          src="/markaive/markaive_cards_section.png" // Path to the hero image
           alt="MarkAIve Hero Image"
           width={1200}
           height={600}

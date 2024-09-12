@@ -9,7 +9,7 @@ const MarkAIverighttextwithimage = () => {
         {/* Right Image Section */}
         <div className="flex justify-center">
           <Image
-            src="/MarkAIve_righttext_with_image.png"
+            src="/markaive/MarkAIve_righttext_with_image.png"
             alt="MarkAIve Right Side Image"
             width={500}
             height={500}

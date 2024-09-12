@@ -2,6 +2,7 @@
 import React from "react";
 import DataBar from "./DataBar";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation"; // Import useRouter for navigation
 import { useInView } from "react-intersection-observer";
 
 type DocumentAssistanceTextProps = {
@@ -15,11 +16,16 @@ function DocumentAssistanceText({
   content,
   dataContent,
 }: DocumentAssistanceTextProps) {
+  const router = useRouter(); // Initialize useRouter
+
   const [ref1, inView1] = useInView({ triggerOnce: false });
   const [ref2, inView2] = useInView({ triggerOnce: false });
   const [ref3, inView3] = useInView({ triggerOnce: false });
-  const [ref4, inView4] = useInView({ triggerOnce: false });
-  const [ref5, inView5] = useInView({ triggerOnce: false });
+
+  // Function to handle the navigation when the Explore button is clicked
+  const handleExploreClick = () => {
+    router.push("/markaive"); // Navigate to markaive page
+  };
 
   return (
     <div className="w-full h-full flex flex-col ">
@@ -96,6 +102,7 @@ function DocumentAssistanceText({
               className="h-[42px] rounded-[57px]  gap-[4px] border-[1px] border-black text-center flex items-center justify-center text-black font-semibold text-[14px]
             text-main-gradient hover:text-transparent hover:bg-clip-text 
                 hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2] cursor-pointer"
+              onClick={handleExploreClick}  // Add the onClick event to navigate to markaive
             >
               Explore
             </div>

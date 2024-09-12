@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import './buttonstyle.css'; // Reuse the button styles from MarkAIve
+import './buttonstyle.css'; 
 
 const ContactForm = () => {
   return (
