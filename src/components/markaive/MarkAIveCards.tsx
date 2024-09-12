@@ -44,7 +44,7 @@ const MarkAIveCards = () => {
       <motion.div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/markaive/markaive_cards_section_bg.png')`,
+          backgroundImage: `url('/markaive/markaive_cards_section_bg.webp')`,
         }}
         animate={{ backgroundPosition: ["0% 0%", "100% 50%", "0% 100%", "100% 50%", "0% 0%"] }}
         transition={{
@@ -89,7 +89,7 @@ const MarkAIveCards = () => {
         className="relative z-10 w-full flex justify-center mt-8"
       >
         <Image
-          src="/markaive/markaive_cards_section.png"
+          src="/markaive/markaive_cards_section.webp"
           alt="MarkAIve Hero Image"
           width={1200}
           height={600}

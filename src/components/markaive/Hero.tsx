@@ -14,7 +14,7 @@ const Hero = () => {
       <motion.div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/markaive/bg_markaive_hero.png')`, // Path to the background image
+          backgroundImage: `url('/markaive/bg_markaive_hero.webp')`, // Path to the background image
           backgroundSize: 'cover',
         }}
         // Wave animation using background-position for ripple effect
@@ -38,7 +38,7 @@ const Hero = () => {
           className="w-[85%] max-w-7xl"
         >
           <Image
-            src="/markaive/markaive_hero.png" // Path to the hero image
+            src="/markaive/markaive_hero.webp" // Path to the hero image
             alt="MarkAIve Hero Image"
             width={1600} // Adjusted width
             height={900} // Adjusted height

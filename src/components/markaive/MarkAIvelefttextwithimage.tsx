@@ -121,7 +121,7 @@ const MarkAIvelefttextwithimage = () => {
           className="flex justify-center"
         >
           <Image
-            src="/markaive/MarkAIve_lefttext_with_image.png"
+            src="/markaive/MarkAIve_lefttext_with_image.webp"
             alt="MarkAIve Left Side Image"
             width={500}
             height={500}
