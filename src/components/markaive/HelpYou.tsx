@@ -17,6 +17,7 @@ const HelpYou = () => {
   const [ref3, inView3] = useInView({ triggerOnce: false });
   const [ref4, inView4] = useInView({ triggerOnce: false });
   const [ref5, inView5] = useInView({ triggerOnce: false });
+  const [imageRef, inViewImage] = useInView({ triggerOnce: false });
 
   return (
     <div className="w-full py-12 flex justify-center">
@@ -136,8 +137,14 @@ const HelpYou = () => {
           </motion.div>
         </div>
 
-        {/* Right Image Section */}
-        <div className="flex justify-center items-center">
+        {/* Right Image Section with Animation */}
+        <motion.div
+          ref={imageRef}
+          initial={{ opacity: 0, x: 100 }}
+          animate={inViewImage ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="flex justify-center items-center"
+        >
           <Image
             src="/markaive/MarkAIve_Help_You.png" // Path to the image in the public folder
             alt="Help You"
@@ -145,7 +152,7 @@ const HelpYou = () => {
             height={500}
             className="rounded-lg"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
