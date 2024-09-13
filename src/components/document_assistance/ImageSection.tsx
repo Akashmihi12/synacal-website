@@ -21,7 +21,7 @@ function ImageSection() {
             className="w-full h-[66.64px]  rounded-[13.88px] overflow-hidden relative"
           >
             <Image
-              src="/price.svg"
+              src="/price.webp"
               alt="Price Tag"
               layout="fill"
               objectFit="cover"
@@ -36,7 +36,7 @@ function ImageSection() {
             className="w-full h-[213.24px]  rounded-[13.88px] overflow-hidden relative"
           >
             <Image
-              src="/Calender.svg"
+              src="/Calender.webp"
               alt="Calender Tag"
               layout="fill"
               objectFit="cover"
@@ -51,7 +51,7 @@ function ImageSection() {
             className="w-full h-[204.35px]  rounded-[13.88px] overflow-hidden relative"
           >
             <Image
-              src="/Shedule.svg"
+              src="/Shedule.webp"
               alt="Shedule Tag"
               layout="fill"
               objectFit="cover"
@@ -67,7 +67,7 @@ function ImageSection() {
           className="w-[66.1%] h-full  rounded-[13.88px] overflow-x-hidden relative"
         >
           <Image
-            src="/dashboard.svg"
+            src="/dashboard.webp"
             alt="dashboard Tag"
             layout="fill"
             objectFit="cover"

@@ -4,11 +4,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const images = [
-  { src: "/logo/british.svg", alt: "British council" },
-  { src: "/logo/linkedin.svg", alt: "Linkedin" },
-  { src: "/logo/whatsapp.svg", alt: "whatsapp" },
-  { src: "/logo/yamaha.svg", alt: "Yamaha" },
-  { src: "/logo/redbull.svg", alt: "Red Bull" },
+  { src: "/logo/british.webp", alt: "British council" },
+  { src: "/logo/linkedin.webp", alt: "Linkedin" },
+  { src: "/logo/whatsapp.webp", alt: "whatsapp" },
+  { src: "/logo/yamaha.webp", alt: "Yamaha" },
+  { src: "/logo/redbull.webp", alt: "Red Bull" },
 ];
 
 const duplicateCount = 1000;

@@ -40,7 +40,7 @@ function TopServicesGrid() {
         transition={{ duration: 1, delay: 0.5 }}
       >
         <TopServicesBlock
-          imageUrl="/services/AI.svg"
+          imageUrl="/services/AI.webp"
           title="AI Solution"
           description="We develop custom solutions using AI/ML to automate operations and enhance customer experience"
         />
@@ -58,7 +58,7 @@ function TopServicesGrid() {
         transition={{ duration: 1, delay: 0.8 }}
       >
         <TopServicesBlock
-          imageUrl="/services/Data.svg"
+          imageUrl="/services/Data.webp"
           title="Data Analytics"
           description="We help businesses make informed decisions and drive growth through actionable insights."
         />
@@ -76,7 +76,7 @@ function TopServicesGrid() {
         transition={{ duration: 1, delay: 1 }}
       >
         <TopServicesBlock
-          imageUrl="/services/Design.svg"
+          imageUrl="/services/Design.webp"
           title="Digital Transformation"
           description="We help businesses modernize their operations and processes using emerging technologies."
         />
@@ -94,7 +94,7 @@ function TopServicesGrid() {
         transition={{ duration: 1, delay: 1.3 }}
       >
         <TopServicesBlock
-          imageUrl="/services/Software.svg"
+          imageUrl="/services/Software.webp"
           title="Software Development"
           description="We provide end-to-end software solutions for developing, testing, and deploying applications"
         />

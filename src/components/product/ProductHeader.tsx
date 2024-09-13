@@ -109,7 +109,7 @@ function ProductHeader() {
           className="w-[28%] h-[91.53%] cursor-pointer"
         >
           <Image
-            src="/product/Icon.svg"
+            src="/product/Icon.webp"
             alt="Cubic"
             width={411.84}
             height={411.84}

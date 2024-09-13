@@ -31,7 +31,7 @@ function DescriptionCard({ text1, text2, text3 }: DescriptionCardProps) {
         <div className="relative  rounded-[26px] overflow-hidden flex justify-end items-center">
           <div className="w-[65%] h-full flex justify-center items-center">
             <Image
-              src="/logo/main_logo.svg"
+              src="/logo/main_logo.webp"
               alt="main logo"
               layout="intrinsic"
               width={600}

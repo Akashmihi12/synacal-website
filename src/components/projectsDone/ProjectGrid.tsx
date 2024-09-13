@@ -33,7 +33,7 @@ function ProjectGrid() {
           >
             <div className="w-full h-full rounded-[26px] overflow-hidden relative ">
               <Image
-                src="/videothumbnail1.svg"
+                src="/videothumbnail1.webp"
                 alt="video tag Tag"
                 layout="fill"
                 objectFit="cover"
@@ -52,7 +52,7 @@ function ProjectGrid() {
           >
             <div className="w-full h-[424px] rounded-[26px] overflow-hidden relative ">
               <Image
-                src="/videothumbnail2.svg"
+                src="/videothumbnail2.webp"
                 alt="video tag Tag"
                 layout="fill"
                 objectFit="cover"

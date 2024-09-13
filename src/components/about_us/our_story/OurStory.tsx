@@ -15,7 +15,7 @@ function OurStory() {
                     <div>
                         <OurStoryDataBlock
                             date="From Start-Up to Global Success"
-                            imageUrl="/research/subresearch1.svg"
+                            imageUrl="/research/subresearch1.webp"
                             content="Chronicles our journey from a small start-up to a global powerhouse, emphasizing the challenges our founders overcame to 
 achieve success."
                         />
@@ -23,7 +23,7 @@ achieve success."
                     <div>
                         <OurStoryDataBlock
                             date="Innovating Through Adversity"
-                            imageUrl="/research/subresearch2.svg"
+                            imageUrl="/research/subresearch2.webp"
                             content="Focuses on how we navigated a rapidly changing business landscape through innovation and resilience, staying ahead 
 of the curve."
                         />
@@ -31,7 +31,7 @@ of the curve."
                     <div>
                         <OurStoryDataBlock
                             date="Building a Legacy of Excellence"
-                            imageUrl="/research/subresearch3.svg"
+                            imageUrl="/research/subresearch3.webp"
                             content="Showcases our commitment to positive impact and excellence, detailing how we've become industry leaders while upholding our 
 core values."
                         />

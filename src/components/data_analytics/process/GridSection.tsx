@@ -23,7 +23,7 @@ function GridSection() {
             className="w-full h-full "
           >
             <Block
-              imageUrl="/process/Icon1.svg"
+              imageUrl="/process/Icon1.webp"
               title="Uncover Insights Hidden in Your Data"
               description="We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage."
             />
@@ -36,7 +36,7 @@ function GridSection() {
             className="w-full h-full "
           >
             <Block
-              imageUrl="/process/Icon2.svg"
+              imageUrl="/process/Icon2.webp"
               title="Transform Data into Quality Insights"
               description="We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage."
             />
@@ -49,7 +49,7 @@ function GridSection() {
             className="w-full h-full "
           >
             <Block
-              imageUrl="/process/Icon3.svg"
+              imageUrl="/process/Icon3.webp"
               title="Extracting Value from Data"
               description="We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage."
             />
@@ -64,7 +64,7 @@ function GridSection() {
             className="w-full h-full "
           >
             <Block
-              imageUrl="/process/Icon4.svg"
+              imageUrl="/process/Icon4.webp"
               title="Anticipate Future Trends"
               description="We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage."
             />
@@ -77,7 +77,7 @@ function GridSection() {
             className="w-full h-full "
           >
             <Block
-              imageUrl="/process/Icon5.svg"
+              imageUrl="/process/Icon5.webp"
               title="Continuously Enhance Your Analytics"
               description="We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage."
             />

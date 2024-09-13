@@ -6,31 +6,31 @@ const gridData = {
     title: "Uncover Insights Hidden in Your Data",
     description:
       "We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage.",
-    image: "/process/Icon1.svg",
+    image: "/process/Icon1.webp",
   },
   grid2: {
     title: "Transform Data into Quality Insights",
     description:
       "We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage.",
-    image: "/process/Icon2.svg",
+    image: "/process/Icon2.webp",
   },
   grid3: {
     title: "Extracting Value from Data",
     description:
       "We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage.",
-    image: "/process/Icon3.svg",
+    image: "/process/Icon3.webp",
   },
   grid4: {
     title: "Anticipate Future Trends",
     description:
       "We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage.",
-    image: "/process/Icon4.svg",
+    image: "/process/Icon4.webp",
   },
   grid5: {
     title: "Continuously Enhance Your Analytics",
     description:
       "We will work with you to understand your business, data sources, and objectives, and identify data that can be leveraged to improve decision-making and create a competitive advantage.",
-    image: "/process/Icon5.svg",
+    image: "/process/Icon5.webp",
   },
 };
 

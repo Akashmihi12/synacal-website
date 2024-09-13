@@ -59,7 +59,7 @@ function LatestResearch() {
             >
               <ResearchDataBlock
                 backgroundText="Innovative Technologies and Their Impact on Operational Efficiency"
-                imageUrl="/research/research1.svg"
+                imageUrl="/research/research1.webp"
                 date="Published 20 November, 2024"
                 content="Unlock intelligent information retrieval with Doxplore, our AI-powered software that revolutionizes exploring and extracting insights from large document sets."
               />
@@ -73,7 +73,7 @@ function LatestResearch() {
               <ResearchDataBlock
                 backgroundText="Innovative Technologies and Their Impact on Operational Efficiency"
                 date="Published 20 November, 2024"
-                imageUrl="/research/research1.svg"
+                imageUrl="/research/research1.webp"
                 content="Unlock intelligent information retrieval with Doxplore, our AI-powered software that revolutionizes exploring and extracting insights from large document sets."
               />
             </motion.div>
@@ -87,7 +87,7 @@ function LatestResearch() {
             >
               <ResearchDataBlock
                 date="Published 20 November, 2024"
-                imageUrl="/research/subresearch1.svg"
+                imageUrl="/research/subresearch1.webp"
                 content="Unlock intelligent information retrieval with Doxplore, our AI-powered software that revolutionizes exploring and extracting insights from large document sets."
               />
             </motion.div>
@@ -100,7 +100,7 @@ function LatestResearch() {
             >
               <ResearchDataBlock
                 date="Published 20 November, 2024"
-                imageUrl="/research/subresearch2.svg"
+                imageUrl="/research/subresearch2.webp"
                 content="Unlock intelligent information retrieval with Doxplore, our AI-powered software that revolutionizes exploring and extracting insights from large document sets."
               />
             </motion.div>
@@ -113,7 +113,7 @@ function LatestResearch() {
             >
               <ResearchDataBlock
                 date="Published 20 November, 2024"
-                imageUrl="/research/subresearch3.svg"
+                imageUrl="/research/subresearch3.webp"
                 content="Unlock intelligent information retrieval with Doxplore, our AI-powered software that revolutionizes exploring and extracting insights from large document sets."
               />
             </motion.div>

@@ -76,7 +76,7 @@ const QuickContacts = () => {
             transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
             className="w-[40px] h-[40px] relative cursor-pointer"
           >
-            <Image src="/logo/call.png" alt="Phone Icon" layout="fill" objectFit="contain" />
+            <Image src="/logo/call.webp" alt="Phone Icon" layout="fill" objectFit="contain" />
           </motion.div>
           <p className="text-black font-medium">+94 70 457 5691</p>
         </motion.div>
@@ -109,7 +109,7 @@ const QuickContacts = () => {
             transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
             className="w-[40px] h-[40px] relative cursor-pointer"
           >
-            <Image src="/logo/email.png" alt="Email Icon" layout="fill" objectFit="contain" />
+            <Image src="/logo/email.webp" alt="Email Icon" layout="fill" objectFit="contain" />
           </motion.div>
           <p className="text-black font-medium">hello@synacal.ai</p>
         </motion.div>
@@ -142,7 +142,7 @@ const QuickContacts = () => {
             transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
             className="w-[40px] h-[40px] relative cursor-pointer"
           >
-            <Image src="/logo/map.png" alt="Map Icon" layout="fill" objectFit="contain" />
+            <Image src="/logo/map.webp" alt="Map Icon" layout="fill" objectFit="contain" />
           </motion.div>
           <p className="text-black font-medium">Address Here</p>
         </motion.div>

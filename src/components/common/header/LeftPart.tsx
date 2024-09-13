@@ -16,7 +16,7 @@ function LeftPart() {
         className="cursor-pointer"
       >
         <Image
-          src="/logo/synacal_logo.png"
+          src="/logo/synacal_logo.webp"
           alt="Synacal Logo"
           width={148}
           height={20}

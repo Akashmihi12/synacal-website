@@ -12,7 +12,7 @@ function Footer() {
         <div className="w-full h-[456px] ">
           <div
             style={{
-              backgroundImage: `url('/footer/footerbackground.svg')`,
+              backgroundImage: `url('/footer/footerbackground.webp')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               width: "100%",
@@ -36,7 +36,7 @@ function Footer() {
                     className="w-[148px] h-[20px]  relative overflow-hidden"
                   >
                     <Image
-                      src="/footer/company_logo.svg"
+                      src="/footer/company_logo.webp"
                       alt="company logo"
                       layout="fill"
                       objectFit="contain"
@@ -52,13 +52,13 @@ function Footer() {
                   <div className="w-[353px] h-[24px]  mt-7 grid grid-cols-2">
                     <div className="w-full h-full ">
                       <IconBar
-                        icon="/footer/whatsapp.svg"
+                        icon="/footer/whatsapp.webp"
                         text="+94 70 457 5691"
                       />
                     </div>
                     <div className="w-full h-full ">
                       <IconBar
-                        icon="/footer/email.svg"
+                        icon="/footer/email.webp"
                         text="hello@synacal.ai"
                       />
                     </div>
