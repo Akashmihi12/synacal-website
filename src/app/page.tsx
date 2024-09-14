@@ -11,10 +11,10 @@ import LatestResearch from "@/components/research/LatestResearch";
 import Started_bar from "@/components/getstarted/Started_bar";
 import QandABlock from "@/components/q_and_a/QandABlock";
 
-export default function Home() {
+export default function ClientPage() {
   return (
     <main>
-      <div className=" mt-[106px] w-full bg-background-color">
+      <div className="mt-[106px] w-full bg-background-color">
         <HeadNotice
           text1="Tech boosts"
           specialText="biz growth."

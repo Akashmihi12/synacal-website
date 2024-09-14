@@ -1,10 +1,11 @@
+// src/components/getstarted/AuroraBackgroundDemo.tsx
 "use client";
 
 import { motion } from "framer-motion";
 import React from "react";
 import { AuroraBackground } from "./Aurora_background";
 
-export function AuroraBackgroundDemo() {
+export function AuroraBackgroundDemo({ navigateToClientPage }: { navigateToClientPage: () => void }) {
   return (
     <AuroraBackground className="h-[500px]">
       <motion.div
@@ -52,7 +53,7 @@ export function AuroraBackgroundDemo() {
             </div>
           </div>
 
-          <div className="text-[20px] font-medium leading-[32px]  dark:text-white text-center">
+          <div className="text-[20px] font-medium leading-[32px] dark:text-white text-center">
             <span>
               Whether you need a MVP or extra bandwidth, every engagement starts
               with a discovery call. Connect with one of our specialists at a
@@ -60,7 +61,10 @@ export function AuroraBackgroundDemo() {
             </span>
           </div>
         </div>
+
+        {/* Update this button to navigate to the client page */}
         <motion.button
+          onClick={navigateToClientPage} // Bind the navigation function here
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.1 }}
           drag
@@ -70,9 +74,7 @@ export function AuroraBackgroundDemo() {
             right: 5,
             bottom: 5,
           }}
-          className="bg-transparent  rounded-full border-white text-white border-[1px] w-fit  px-4 py-2
-          cursor-pointer 
-      hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2] hover:border-gradient"
+          className="bg-transparent rounded-full border-white text-white border-[1px] w-fit px-4 py-2 cursor-pointer hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2] hover:border-gradient"
         >
           <span>Let`s Innovate Together</span>
         </motion.button>
