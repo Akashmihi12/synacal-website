@@ -6,7 +6,6 @@ import { useInView } from "react-intersection-observer";
 
 function TopServicesGrid() {
   const [refParent, inViewParent] = useInView({ triggerOnce: false });
-
   const [ref2, inView2] = useInView({ triggerOnce: false });
   const [ref3, inView3] = useInView({ triggerOnce: false });
   const [ref4, inView4] = useInView({ triggerOnce: false });
@@ -26,11 +25,10 @@ function TopServicesGrid() {
           },
         },
       }}
-      className="h-full w-full grid grid-cols-2 grid-rows-2 gap-[40px]"
+      className="grid grid-cols-1 md:grid-cols-2 gap-[20px] md:gap-[40px]"
     >
       <motion.div
         ref={ref2}
-        className="h-full w-full"
         initial="hidden"
         animate={inView2 ? "visible" : "hidden"}
         variants={{
@@ -48,7 +46,6 @@ function TopServicesGrid() {
 
       <motion.div
         ref={ref3}
-        className="h-full w-full"
         initial="hidden"
         animate={inView3 ? "visible" : "hidden"}
         variants={{
@@ -66,7 +63,6 @@ function TopServicesGrid() {
 
       <motion.div
         ref={ref4}
-        className="h-full w-full"
         initial="hidden"
         animate={inView4 ? "visible" : "hidden"}
         variants={{
@@ -84,7 +80,6 @@ function TopServicesGrid() {
 
       <motion.div
         ref={ref5}
-        className="h-full w-full"
         initial="hidden"
         animate={inView5 ? "visible" : "hidden"}
         variants={{

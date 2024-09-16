@@ -28,15 +28,15 @@ function DocumentAssistanceText({
   };
 
   return (
-    <div className="w-full h-full flex flex-col ">
+    <div className="w-full h-full flex flex-col">
       <motion.div
         ref={ref1}
         initial={{ opacity: 0, scale: 1.2 }}
         animate={inView1 ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 1, delay: 0.5 }}
-        className="h-[144px] w-full "
+        className="h-[144px] w-full"
       >
-        <span className="text-[40px] font-semibold leading-[47.73px] text-black">
+        <span className="text-[32px] md:text-[40px] font-semibold leading-[36px] md:leading-[48px] text-black break-words">
           {title}
         </span>
       </motion.div>
@@ -45,13 +45,13 @@ function DocumentAssistanceText({
         initial={{ opacity: 0, scale: 0.6 }}
         animate={inView2 ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 2, delay: 0.8 }}
-        className="h-[96px] w-full  mt-2"
+        className="h-[96px] w-full mt-2"
       >
-        <span className="text-[18px] font-normal leading-[32px] text-[#31323E]">
+        <span className="text-[16px] md:text-[18px] font-normal leading-[28px] md:leading-[32px] text-[#31323E]">
           {content}
         </span>
       </motion.div>
-      <div className="h-[168px] w-full  mt-3 flex flex-col gap-3">
+      <div className="h-[168px] w-full mt-3 flex flex-col gap-3">
         <motion.div
           whileHover={{ scale: 1.3 }}
           ref={ref3}
@@ -83,8 +83,8 @@ function DocumentAssistanceText({
           <DataBar content={dataContent[2]} />
         </motion.div>
       </div>
-      <div className="h-[42px] w-full  mt-[68px]">
-        <div className=" w-full h-[42px] flex items-end gap-[4px]">
+      <div className="h-[42px] w-full mt-[68px]">
+        <div className="w-full h-[42px] flex items-end gap-[4px]">
           <motion.div
             initial={{ opacity: 0, rotate: -10 }}
             animate={{ opacity: 1, rotate: 0 }}
@@ -96,13 +96,13 @@ function DocumentAssistanceText({
             }}
             whileTap={{ scale: 0.9 }}
             whileHover={{ scale: 1.1 }}
-            className=" h-[42px] w-[27.85%] "
+            className="h-[42px] w-[27.85%]"
           >
             <div
-              className="h-[42px] rounded-[57px]  gap-[4px] border-[1px] border-black text-center flex items-center justify-center text-black font-semibold text-[14px]
+              className="h-[42px] rounded-[57px] gap-[4px] border-[1px] border-black text-center flex items-center justify-center text-black font-semibold text-[14px]
             text-main-gradient hover:text-transparent hover:bg-clip-text 
                 hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2] cursor-pointer"
-              onClick={handleExploreClick}  // Add the onClick event to navigate to markaive
+              onClick={handleExploreClick}
             >
               Explore
             </div>
@@ -118,7 +118,7 @@ function DocumentAssistanceText({
             }}
             whileTap={{ scale: 0.9 }}
             whileHover={{ scale: 1.1 }}
-            className=" h-[42px] w-[27.85%] flex items-center justify-center"
+            className="h-[42px] w-[27.85%] flex items-center justify-center"
           >
             <span
               className="text-[14px] font-semibold leading-[16.71px] text-black text-main-gradient hover:text-transparent hover:bg-clip-text 

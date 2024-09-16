@@ -1,4 +1,3 @@
-// src/components/getstarted/Started_bar.tsx
 "use client";
 import { useRouter } from "next/navigation"; // Import useRouter for navigation
 import React from "react";
@@ -12,7 +11,7 @@ function Started_bar() {
   };
 
   return (
-    <div className="w-full h-[468px] bg-red-400 ">
+    <div className="w-full h-[400px] md:h-[468px] bg-red-400">
       <AuroraBackgroundDemo navigateToClientPage={navigateToClientPage} />
     </div>
   );

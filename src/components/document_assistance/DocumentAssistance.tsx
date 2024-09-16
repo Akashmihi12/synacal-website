@@ -8,9 +8,7 @@ import { useInView } from "react-intersection-observer";
 function DocumentAssistance() {
   const [ref1, inView1] = useInView({ triggerOnce: false });
   const [ref2, inView2] = useInView({ triggerOnce: false });
-  const [ref3, inView3] = useInView({ triggerOnce: false });
-  const [ref4, inView4] = useInView({ triggerOnce: false });
-  const [ref5, inView5] = useInView({ triggerOnce: false });
+
   const data = [
     {
       title: "Discover DOXPLORE Your Intelligent Document Assistant",
@@ -33,23 +31,28 @@ function DocumentAssistance() {
       ],
     },
   ];
+
   return (
-    <div className="w-full h-[1492.71px] ">
-      <div className="h-full w-full grid grid-rows-2 gap-y-[113.29px] grid-cols-2 gap-x-[0.8%]">
+    <div className="w-full h-auto flex flex-col gap-10 md:gap-y-[113.29px]">
+      {/* First Section - DOXPLORE */}
+      <div className="md:flex md:flex-row-reverse md:items-center md:gap-[0.8%]">
+        {/* Image Section */}
         <motion.div
           ref={ref1}
           initial={{ opacity: 0, y: -200 }}
           animate={inView1 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.5 }}
-          className="w-full h-full rounded-2xl "
+          className="w-full md:w-1/2 h-full rounded-2xl mb-6 md:mb-0"
           style={{
             backgroundImage: "linear-gradient(180deg, #EFD7EB, #B8D5FB)",
           }}
         >
           <ImageSection />
         </motion.div>
-        <div className="w-full h-full flex ml-[15%] items-center ">
-          <div className="w-[65%] h-[538px] ">
+
+        {/* Text Section */}
+        <div className="w-full md:w-1/2 flex justify-center md:ml-[15%]">
+          <div className="w-[90%] md:w-[65%] h-full">
             <DocumentAssistanceText
               title={data[0].title}
               content={data[0].description}
@@ -57,8 +60,27 @@ function DocumentAssistance() {
             />
           </div>
         </div>
-        <div className="w-full h-full flex ml-[20%] items-center">
-          <div className="w-[65%] h-[538px] ">
+      </div>
+
+      {/* Second Section - MarkAIve */}
+      <div className="md:flex md:flex-row md:items-center md:gap-[0.8%]">
+        {/* Image Section */}
+        <motion.div
+          ref={ref2}
+          initial={{ opacity: 0, y: 200 }}
+          animate={inView2 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="w-full md:w-1/2 h-full rounded-2xl order-2 md:order-1"
+          style={{
+            backgroundImage: "linear-gradient(180deg, #EFD7EB, #B8D5FB)",
+          }}
+        >
+          <ImageSection />
+        </motion.div>
+
+        {/* Text Section */}
+        <div className="w-full md:w-1/2 flex justify-center md:ml-[15%] order-1 md:order-2">
+          <div className="w-[90%] md:w-[65%] h-full">
             <DocumentAssistanceText
               title={data[1].title}
               content={data[1].description}
@@ -66,18 +88,6 @@ function DocumentAssistance() {
             />
           </div>
         </div>
-        <motion.div
-          ref={ref2}
-          initial={{ opacity: 0, y: 200 }}
-          animate={inView2 ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="w-full h-full rounded-2xl"
-          style={{
-            backgroundImage: "linear-gradient(180deg, #EFD7EB, #B8D5FB)",
-          }}
-        >
-          <ImageSection />
-        </motion.div>
       </div>
     </div>
   );

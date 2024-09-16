@@ -14,8 +14,8 @@ function ProductHeader() {
 
   return (
     <AuroraBackground>
-      <div className="h-[450px] w-full bg-black flex items-center">
-        <div className="h-[252px] w-[32.55%] ml-[23.25%] mr-[11%] flex flex-col">
+      <div className="flex flex-col md:flex-row h-auto md:h-[450px] w-full bg-black items-center justify-between md:justify-start p-4 md:p-0">
+        <div className="w-full md:w-[32.55%] md:ml-[23.25%] md:mr-[11%] flex flex-col items-center md:items-start text-center md:text-left">
           <motion.div
             ref={ref1}
             initial={{ opacity: 0, y: -50 }}
@@ -27,25 +27,26 @@ function ProductHeader() {
               type: "spring",
               stiffness: 150,
             }}
-            className="w-full h-[114px]"
+            className="w-full"
           >
-            <motion.span className="text-[48px] font-semibold leading-[57.28px] text-[#FFFFFF]">
+            <motion.span className="text-[32px] md:text-[48px] font-semibold leading-[36px] md:leading-[57.28px] text-[#FFFFFF]">
               Smart Products Made for Success
             </motion.span>
           </motion.div>
+
           <motion.div
             ref={ref2}
             initial={{ opacity: 0, scale: 1.2 }}
             animate={inView2 ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 2, delay: 1 }}
-            className="w-full h-[64px] mt-[8px]"
+            className="w-full mt-4 md:mt-8"
           >
-            <span className="text-[20px] font-normal leading-[32px] text-[#EDEDED]">
-              Explore our innovative products that drive your success and
-              efficiency.
+            <span className="text-[16px] md:text-[20px] font-normal leading-[24px] md:leading-[32px] text-[#EDEDED]">
+              Explore our innovative products that drive your success and efficiency.
             </span>
           </motion.div>
-          <div className="w-full h-[66px] flex items-end gap-[4px]">
+
+          <div className="w-full mt-4 md:mt-6 flex flex-col md:flex-row items-center md:items-end gap-4">
             <motion.div
               ref={ref3}
               initial={{ opacity: 0, rotate: -5 }}
@@ -56,7 +57,7 @@ function ProductHeader() {
                 type: "spring",
                 stiffness: 300,
               }}
-              className="h-[42px] w-[27.85%] cursor-pointer"
+              className="h-[42px] w-[100%] md:w-[27.85%] cursor-pointer"
             >
               <motion.div
                 whileTap={{ scale: 0.9 }}
@@ -68,6 +69,7 @@ function ProductHeader() {
                 See All Products
               </motion.div>
             </motion.div>
+
             <motion.div
               ref={ref4}
               initial={{ opacity: 0, rotate: -5 }}
@@ -78,27 +80,25 @@ function ProductHeader() {
                 type: "spring",
                 stiffness: 300,
               }}
-              className="h-[42px] w-[27.85%] flex items-center justify-center 
+              className="h-[42px] w-[100%] md:w-[27.85%] flex items-center justify-center 
               text-main-gradient hover:text-transparent hover:bg-clip-text 
-              hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2] cursor-pointer user-select-none"
+              hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2] cursor-pointer"
             >
               <motion.span
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.1 }}
-                className="text-[14px] font-semibold leading-[16.71px] text-[#FFFFFF] cursor-pointer *:text-main-gradient hover:text-transparent hover:bg-clip-text 
-                hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2] user-select-none"
+                className="text-[14px] font-semibold leading-[16.71px] text-[#FFFFFF] cursor-pointer"
               >
                 Get a demo
               </motion.span>
             </motion.div>
           </div>
         </div>
+
         <motion.div
           ref={ref5}
           initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
-          animate={
-            inView5 ? { opacity: 1, scale: 1, rotate: 0, type: "spring" } : {}
-          }
+          animate={inView5 ? { opacity: 1, scale: 1, rotate: 0, type: "spring" } : {}}
           whileHover={{ scale: 0.9, rotate: 10 }}
           transition={{
             duration: 2,
@@ -106,7 +106,7 @@ function ProductHeader() {
             type: "spring",
             stiffness: 120,
           }}
-          className="w-[28%] h-[91.53%] cursor-pointer"
+          className="w-full md:w-[28%] h-[auto] md:h-[91.53%] mt-8 md:mt-0 flex justify-center"
         >
           <Image
             src="/product/Icon.webp"

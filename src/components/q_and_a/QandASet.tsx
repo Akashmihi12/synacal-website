@@ -39,13 +39,9 @@ const FAQComponent = () => {
   };
 
   const [ref1, inView1] = useInView({ triggerOnce: false });
-  const [ref2, inView2] = useInView({ triggerOnce: false });
-  const [ref3, inView3] = useInView({ triggerOnce: false });
-  const [ref4, inView4] = useInView({ triggerOnce: false });
-  const [ref5, inView5] = useInView({ triggerOnce: false });
 
   return (
-    <div className="w-full max-w-md mx-auto h-[440px] overflow-y-auto p-4">
+    <div className="w-full max-w-lg mx-auto h-auto overflow-y-auto p-4">
       {faqData.map((item, index) => (
         <AnimatePresence key={index}>
           <motion.div
@@ -53,7 +49,7 @@ const FAQComponent = () => {
             className="p-4 bg-transparent border-b-[0.5px] border-[#ECECEC]"
             initial={{ opacity: 0, y: 20 }}
             animate={inView1 ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 2, delay: index * 0.2 }}
+            transition={{ duration: 0.8, delay: index * 0.2 }}
           >
             <div
               className="flex items-center cursor-pointer"
@@ -62,14 +58,16 @@ const FAQComponent = () => {
               <span
                 className={`mr-3 inline-block w-8 h-8 text-center ${
                   openIndex === index
-                    ? "bg-transparent text-[#CF71ED]"
-                    : "bg-transparent text-[#CF71ED]"
+                    ? "text-[#CF71ED]"
+                    : "text-[#CF71ED]"
                 } flex items-center justify-center`}
               >
                 {openIndex === index ? "-" : "+"}
               </span>
               <span
-                className={`text-[18px] font-medium leading-[28px] ${openIndex === index ? "text-[#31323E]" : "text-[#31323E]"}`}
+                className={`text-[16px] md:text-[18px] font-medium leading-[24px] md:leading-[28px] ${
+                  openIndex === index ? "text-[#31323E]" : "text-[#31323E]"
+                }`}
               >
                 {item.question}
               </span>
@@ -77,7 +75,7 @@ const FAQComponent = () => {
             {openIndex === index && (
               <motion.div
                 ref={ref1}
-                className="mt-2 text-[#31323E] text-[14px] font-medium leading-[24px] ml-11"
+                className="mt-2 text-[#31323E] text-[14px] md:text-[16px] font-medium leading-[20px] md:leading-[24px] ml-8"
                 initial={{ opacity: 0, height: 0 }}
                 animate={inView1 ? { opacity: 1, height: "auto" } : {}}
                 transition={{ duration: 0.5 }}
