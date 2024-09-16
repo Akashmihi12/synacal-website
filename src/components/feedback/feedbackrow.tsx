@@ -1,13 +1,12 @@
-// FeedBackRow.tsx
-
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Feedbakrowblok from "./Feedbakrowblok";
+import { motion } from "framer-motion";
 
 function FeedBackRow() {
   return (
-    <div className="h-full w-full flex justify-center bg-[#080917]">
-      {/* Responsive Grid: 4 columns on desktop, single column stack on mobile */}
-      <div className="w-[90%] md:w-[73%] h-auto grid grid-cols-1 md:grid-cols-4 gap-[16px]">
+    <div className="h-full w-full  flex justify-center bg-[#080917]">
+      <div className="w-[73%] h-screen grid grid-cols-4 gap-[16px]">
         <Feedbakrowblok speed="super_slow" />
         <Feedbakrowblok speed="slow" />
         <Feedbakrowblok speed="normal" />
@@ -18,7 +17,6 @@ function FeedBackRow() {
 }
 
 export default FeedBackRow;
-
 const testimonials = [
   {
     quote:
