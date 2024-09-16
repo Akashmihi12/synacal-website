@@ -1,3 +1,5 @@
+// Feedbakrowblok.tsx
+
 import React from "react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 type FeedBackRowBlockProps = {
@@ -6,7 +8,7 @@ type FeedBackRowBlockProps = {
 
 function Feedbakrowblok({ speed }: FeedBackRowBlockProps) {
   return (
-    <div className="h-screen rounded-md flex flex-col antialiased bg-white dark:bg-[#080917] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="h-full rounded-md flex flex-col bg-white dark:bg-[#080917] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="down"
@@ -17,6 +19,9 @@ function Feedbakrowblok({ speed }: FeedBackRowBlockProps) {
 }
 
 export default Feedbakrowblok;
+
+// Testimonials array remains the same.
+
 const testimonials = [
   {
     quote:

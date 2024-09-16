@@ -24,7 +24,6 @@ const config: Config = {
         "Text-Black-gradient": "linear-gradient(90deg, #272727 100%, #191919 100%)",
         "sub-section-gradient":
           "linear-gradient(180deg, #EFD7EB 0%, #B8D5FB 100%)",
-
       },
       colors: {
         "background-color": "#FFFFFFCC",
@@ -33,6 +32,9 @@ const config: Config = {
         "top-services-bg": "#F2F2F7",
         "custom-gradient-start": "#CF71ED",
         "custom-gradient-end": "#3335E2",
+      },
+      screens: {
+        'custom-lg': '1055px', // Custom breakpoint to trigger mobile layout at 1055px
       },
       animation: {
         "infinite-scroll": "infinite-scroll_forward 1000s linear infinite",

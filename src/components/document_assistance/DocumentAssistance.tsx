@@ -42,7 +42,7 @@ function DocumentAssistance() {
           initial={{ opacity: 0, y: -200 }}
           animate={inView1 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.5 }}
-          className="w-full md:w-1/2 h-full rounded-2xl mb-6 md:mb-0"
+          className="w-full md:w-[45%] h-full rounded-2xl mb-6 md:mb-0"
           style={{
             backgroundImage: "linear-gradient(180deg, #EFD7EB, #B8D5FB)",
           }}
@@ -51,8 +51,8 @@ function DocumentAssistance() {
         </motion.div>
 
         {/* Text Section */}
-        <div className="w-full md:w-1/2 flex justify-center md:ml-[15%]">
-          <div className="w-[90%] md:w-[65%] h-full">
+        <div className="w-full md:w-[45%] flex justify-center md:ml-[10%]">
+          <div className="w-[90%] md:w-full h-full">
             <DocumentAssistanceText
               title={data[0].title}
               content={data[0].description}
@@ -70,7 +70,7 @@ function DocumentAssistance() {
           initial={{ opacity: 0, y: 200 }}
           animate={inView2 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.5 }}
-          className="w-full md:w-1/2 h-full rounded-2xl order-2 md:order-1"
+          className="w-full md:w-[45%] h-full rounded-2xl order-2 md:order-1"
           style={{
             backgroundImage: "linear-gradient(180deg, #EFD7EB, #B8D5FB)",
           }}
@@ -79,8 +79,8 @@ function DocumentAssistance() {
         </motion.div>
 
         {/* Text Section */}
-        <div className="w-full md:w-1/2 flex justify-center md:ml-[15%] order-1 md:order-2">
-          <div className="w-[90%] md:w-[65%] h-full">
+        <div className="w-full md:w-[45%] flex justify-center md:ml-[10%] order-1 md:order-2">
+          <div className="w-[90%] md:w-full h-full">
             <DocumentAssistanceText
               title={data[1].title}
               content={data[1].description}
