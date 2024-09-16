@@ -14,8 +14,10 @@ function ProductHeader() {
 
   return (
     <AuroraBackground>
-      <div className="flex flex-col md:flex-row h-auto md:h-[450px] w-full bg-black items-center justify-between md:justify-start p-4 md:p-0">
-        <div className="w-full md:w-[32.55%] md:ml-[23.25%] md:mr-[11%] flex flex-col items-center md:items-start text-center md:text-left">
+      {/* Mobile Responsive Layout with flex-col on mobile and row on larger screens */}
+      <div className="h-auto md:h-[450px] w-full bg-black flex flex-col md:flex-row items-center">
+        {/* Text and Button Section */}
+        <div className="h-auto md:h-[252px] w-full md:w-[32.55%] ml-0 md:ml-[23.25%] mr-0 md:mr-[11%] flex flex-col items-center md:items-start px-4 md:px-0 py-6 md:py-0">
           <motion.div
             ref={ref1}
             initial={{ opacity: 0, y: -50 }}
@@ -27,26 +29,27 @@ function ProductHeader() {
               type: "spring",
               stiffness: 150,
             }}
-            className="w-full"
+            className="w-full h-auto md:h-[114px]"
           >
-            <motion.span className="text-[32px] md:text-[48px] font-semibold leading-[36px] md:leading-[57.28px] text-[#FFFFFF]">
+            <motion.span className="text-[28px] md:text-[48px] font-semibold leading-[36px] md:leading-[57.28px] text-[#FFFFFF] text-center md:text-left">
               Smart Products Made for Success
             </motion.span>
           </motion.div>
-
           <motion.div
             ref={ref2}
             initial={{ opacity: 0, scale: 1.2 }}
             animate={inView2 ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 2, delay: 1 }}
-            className="w-full mt-4 md:mt-8"
+            className="w-full h-auto md:h-[64px] mt-[8px] text-center md:text-left"
           >
-            <span className="text-[16px] md:text-[20px] font-normal leading-[24px] md:leading-[32px] text-[#EDEDED]">
-              Explore our innovative products that drive your success and efficiency.
+            <span className="text-[16px] md:text-[20px] font-normal leading-[28px] md:leading-[32px] text-[#EDEDED]">
+              Explore our innovative products that drive your success and
+              efficiency.
             </span>
           </motion.div>
 
-          <div className="w-full mt-4 md:mt-6 flex flex-col md:flex-row items-center md:items-end gap-4">
+          {/* Button Section */}
+          <div className="w-full h-[66px] flex justify-center md:justify-start gap-[4px] mt-4 md:mt-0">
             <motion.div
               ref={ref3}
               initial={{ opacity: 0, rotate: -5 }}
@@ -57,7 +60,7 @@ function ProductHeader() {
                 type: "spring",
                 stiffness: 300,
               }}
-              className="h-[42px] w-[100%] md:w-[27.85%] cursor-pointer"
+              className="h-[42px] w-[45%] md:w-[27.85%] cursor-pointer"
             >
               <motion.div
                 whileTap={{ scale: 0.9 }}
@@ -80,7 +83,7 @@ function ProductHeader() {
                 type: "spring",
                 stiffness: 300,
               }}
-              className="h-[42px] w-[100%] md:w-[27.85%] flex items-center justify-center 
+              className="h-[42px] w-[45%] md:w-[27.85%] flex items-center justify-center 
               text-main-gradient hover:text-transparent hover:bg-clip-text 
               hover:bg-gradient-to-r hover:from-[#CF71ED] hover:to-[#3335E2] cursor-pointer"
             >
@@ -95,6 +98,7 @@ function ProductHeader() {
           </div>
         </div>
 
+        {/* Image Section */}
         <motion.div
           ref={ref5}
           initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
@@ -106,7 +110,7 @@ function ProductHeader() {
             type: "spring",
             stiffness: 120,
           }}
-          className="w-full md:w-[28%] h-[auto] md:h-[91.53%] mt-8 md:mt-0 flex justify-center"
+          className="w-full md:w-[28%] h-auto md:h-[91.53%] mt-6 md:mt-0 cursor-pointer"
         >
           <Image
             src="/product/Icon.webp"
